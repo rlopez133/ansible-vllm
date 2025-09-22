@@ -22,7 +22,11 @@ NOTE: Ensure you are on Ansible 2.18 or greater.
 **Install Required Ansible Collections:**
 ```bash
 ansible-galaxy collection install amazon.aws:10.1.1
+```
+```bash
 ansible-galaxy collection install community.general
+```
+```bash
 ansible-galaxy collection install community.docker
 ```
 
@@ -37,13 +41,19 @@ Install AWS CLI version 2 using the official installers:
 **macOS:**
 ```bash
 curl "https://awscli.amazonaws.com/AWSCLIV2.pkg" -o "AWSCLIV2.pkg"
+```
+```bash
 sudo installer -pkg AWSCLIV2.pkg -target /
 ```
 
 **Linux:**
 ```bash
 curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+```
+```bash
 unzip awscliv2.zip
+```
+```bash
 sudo ./aws/install
 ```
 
