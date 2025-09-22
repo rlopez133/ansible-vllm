@@ -87,7 +87,8 @@ aws_session_token = IQo*************
 ```bash
 # Verify your credentials work
 aws sts get-caller-identity
-
+```
+```bash
 # Should return something like:
 # {
 #     "UserId": "AIDA******",
@@ -172,11 +173,13 @@ Replace `YOUR_HUGGINGFACE_TOKEN` with your Hugging Face access token.
 ### Step 3: Test the API
 Once deployment completes, test the vLLM API:
 
+List available models
 ```bash
-# List available models
 curl http://YOUR_EC2_PUBLIC_IP:8000/v1/models
+```
 
-# Test chat completion
+Test chat completion
+```bash
 curl http://YOUR_EC2_PUBLIC_IP:8000/v1/chat/completions \
   -H "Content-Type: application/json" \
   -d '{
