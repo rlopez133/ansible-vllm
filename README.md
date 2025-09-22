@@ -58,6 +58,7 @@ sudo ./aws/install
 ```
 
 **Windows:**
+
 Download and run the MSI installer from: https://awscli.amazonaws.com/AWSCLIV2.msi
 
 
